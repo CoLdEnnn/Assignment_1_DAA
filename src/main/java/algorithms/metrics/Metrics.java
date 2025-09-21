@@ -1,4 +1,4 @@
-package Algorithms.metrics;
+package algorithms.metrics;
 
 public class Metrics {
     private long comparisons = 0;

@@ -1,4 +1,4 @@
-package Algorithms.metrics;
+package algorithms.metrics;
 
 public class MetricsTracker {
     private final Metrics metrics = new Metrics();

@@ -1,6 +1,6 @@
-package Algorithms.sort;
+package algorithms.sort;
 
-import Algorithms.metrics.MetricsTracker;
+import algorithms.metrics.MetricsTracker;
 
 public class InsertionSort {
     public static void sort(int[] arr, int left, int right, MetricsTracker tracker) {

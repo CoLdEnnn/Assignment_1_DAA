@@ -1,6 +1,6 @@
-package Algorithms.geometry;
+package algorithms.geometry;
 
-import Algorithms.metrics.MetricsTracker;
+import algorithms.metrics.MetricsTracker;
 
 import java.util.Arrays;
 import java.util.Comparator;

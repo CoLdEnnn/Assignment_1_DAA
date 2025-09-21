@@ -38,7 +38,7 @@ public class ClosestPair {
         return Math.min(d, stripClosest(py, midPoint.x, d, tracker));
     }
 
-    private static double bruteForce(Point[] px, double left, double right, MetricsTracker tracker) {
+    private static double bruteForce(Point[] points, int left, int right, MetricsTracker tracker) {
         double min = Double.POSITIVE_INFINITY;
         for (int i = left; i<= right; i++) {
             for (int j = i + 1; j<= right; j++) {

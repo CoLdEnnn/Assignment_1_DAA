@@ -1,4 +1,4 @@
-package Algorithms.geometry;
+package algorithms.geometry;
 
 public class Point {
     public final double x;

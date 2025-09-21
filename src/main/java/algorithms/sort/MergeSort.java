@@ -1,6 +1,6 @@
-package Algorithms.sort;
+package algorithms.sort;
 
-import Algorithms.metrics.MetricsTracker;
+import algorithms.metrics.MetricsTracker;
 
 public class MergeSort {
     private static final int CUTOFF = 16;

@@ -7,7 +7,7 @@
     <groupId>edu.assignment</groupId>
     <artifactId>algos-assignment</artifactId>
     <version>0.1-SNAPSHOT</version>
-    <name>Algorithms Assignment</name>
+    <name>algorithms Assignment</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

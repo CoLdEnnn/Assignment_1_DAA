@@ -1,6 +1,6 @@
-package Algorithms.util;
+package algorithms.util;
 
-import Algorithms.metrics.MetricsTracker;
+import algorithms.metrics.MetricsTracker;
 
 public class PartitionUtils {
     public static int partition(int[] arr, int left, int right, MetricsTracker tracker){

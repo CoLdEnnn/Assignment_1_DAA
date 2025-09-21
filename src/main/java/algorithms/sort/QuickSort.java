@@ -1,8 +1,8 @@
-package Algorithms.sort;
+package algorithms.sort;
 
-import Algorithms.metrics.MetricsTracker;
-import Algorithms.util.ArrayUtils;
-import Algorithms.util.PartitionUtils;
+import algorithms.metrics.MetricsTracker;
+import algorithms.util.ArrayUtils;
+import algorithms.util.PartitionUtils;
 
 import java.util.Random;
 

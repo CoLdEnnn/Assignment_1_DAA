@@ -37,4 +37,5 @@ class ClosestPairTest {
         double d = ClosestPair.findClosestPair(points, tracker);
         assertEquals(5.0, d, 1e-9);
     }
+
 }

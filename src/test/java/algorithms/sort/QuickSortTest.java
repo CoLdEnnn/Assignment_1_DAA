@@ -33,4 +33,10 @@ class QuickSortTest {
         new QuickSort().sort(arr, tracker); // ✅
         assertTrue(ArrayUtils.isSorted(arr));
     }
+
+    @Test void testEmptyArrayQuickSort() {
+        int[] arr = {};
+        new QuickSort().sort(arr, new MetricsTracker());
+        assertTrue(ArrayUtils.isSorted(arr));
+    }
 }

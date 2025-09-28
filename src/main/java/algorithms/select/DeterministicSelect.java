@@ -8,8 +8,8 @@ import java.util.Arrays;
 
 public class DeterministicSelect {
     public static int select(int[] arr, int k, MetricsTracker tracker) {
-        if (k < 0 || k >= arr.length) {
-            throw new IllegalArgumentException(k + " out of range");
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("Array is empty");
         }
         return select(arr, 0, arr.length - 1, k, tracker);
     }

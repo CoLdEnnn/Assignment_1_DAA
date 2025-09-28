@@ -36,4 +36,10 @@ Repository with implementations and experiments for:
 - Master Theorem: Case 2.
 - Solution: T(n) = Θ(n log n).
 
+## Architecture Notes
+- **Metrics tracking**: A `MetricsTracker` is used to count comparisons, allocations, and recursion depth. This allows fair comparisons between algorithms.
+- **MergeSort**: Uses a reusable buffer to avoid repeated allocations and switches to InsertionSort for small arrays (cutoff ≈ 16).
+- **QuickSort**: Implements randomized pivot selection. To bound recursion depth, it always recurses into the smaller partition first and iterates over the larger one. This guarantees O(log n) stack depth in typical cases.
+- **Deterministic Select (Median-of-Medians)**: Groups elements in 5s, finds median-of-medians as pivot, partitions in-place, and recurses only on the needed side. Always recurses into the smaller side for depth control.
+- **Closest Pair of Points**: Standard divide-and-conquer in 2D. Sorts by x, recurses on halves, and checks the vertical strip in O(n). Uses the 7–8 neighbors check in y-sorted order.
 

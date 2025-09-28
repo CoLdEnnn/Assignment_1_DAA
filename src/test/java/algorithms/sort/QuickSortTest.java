@@ -9,11 +9,12 @@ import java.util.Random;
 import static org.junit.jupiter.api.Assertions.*;
 
 class QuickSortTest {
+
     @Test
     public void testSortedArray() {
         int[] arr = {1,2,3,4,5};
         MetricsTracker tracker = new MetricsTracker();
-        QuickSort.sort(arr, tracker);
+        new QuickSort().sort(arr, tracker); // ✅ создаем объект
         assertTrue(ArrayUtils.isSorted(arr));
     }
 
@@ -21,7 +22,7 @@ class QuickSortTest {
     void testRandomArray() {
         int[] arr = new Random().ints(200, -500, 500).toArray();
         MetricsTracker tracker = new MetricsTracker();
-        QuickSort.sort(arr, tracker);
+        new QuickSort().sort(arr, tracker); // ✅
         assertTrue(ArrayUtils.isSorted(arr));
     }
 
@@ -29,7 +30,7 @@ class QuickSortTest {
     void testDuplicates() {
         int[] arr = {5, 5, 5, 5, 5};
         MetricsTracker tracker = new MetricsTracker();
-        QuickSort.sort(arr, tracker);
+        new QuickSort().sort(arr, tracker); // ✅
         assertTrue(ArrayUtils.isSorted(arr));
     }
 }

@@ -35,16 +35,17 @@ public class MainCli {
                 int[] arr = random.ints(n, 0, 1_000_000).toArray();
                 tracker.reset();
                 long start = System.nanoTime();
-                MergeSort.sort(arr,tracker);
+                new MergeSort().sort(arr, tracker);   // ✅ через объект
                 long elapsed = (System.nanoTime() - start) / 1_000_000;
                 Metrics m = tracker.snapshot();
-                results.add(new String[]{"mergesort", String.valueOf(n), String.valueOf(elapsed), String.valueOf(m.getComparisons()), String.valueOf(m.getAllocations()), String.valueOf(m.getMaxDepth()), String.valueOf(m.getMaxDepth())});
+                results.add(new String[]{"mergesort", String.valueOf(n), String.valueOf(elapsed),
+                        String.valueOf(m.getComparisons()), String.valueOf(m.getAllocations()), String.valueOf(m.getMaxDepth())});
             }
             case "quicksort" -> {
                 int[] arr = random.ints(n, 0, 1_000_000).toArray();
                 tracker.reset();
                 long start = System.nanoTime();
-                QuickSort.sort(arr, tracker);
+                new QuickSort().sort(arr, tracker);   // ✅ через объект
                 long elapsed = (System.nanoTime() - start) / 1_000_000;
                 Metrics m = tracker.snapshot();
                 results.add(new String[]{"quicksort", String.valueOf(n), String.valueOf(elapsed),

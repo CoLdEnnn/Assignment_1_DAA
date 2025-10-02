@@ -14,7 +14,7 @@ class QuickSortTest {
     public void testSortedArray() {
         int[] arr = {1,2,3,4,5};
         MetricsTracker tracker = new MetricsTracker();
-        new QuickSort().sort(arr, tracker); // ✅ создаем объект
+        new QuickSort().sort(arr, tracker);
         assertTrue(ArrayUtils.isSorted(arr));
     }
 
@@ -22,7 +22,7 @@ class QuickSortTest {
     void testRandomArray() {
         int[] arr = new Random().ints(200, -500, 500).toArray();
         MetricsTracker tracker = new MetricsTracker();
-        new QuickSort().sort(arr, tracker); // ✅
+        new QuickSort().sort(arr, tracker);
         assertTrue(ArrayUtils.isSorted(arr));
     }
 
@@ -30,7 +30,7 @@ class QuickSortTest {
     void testDuplicates() {
         int[] arr = {5, 5, 5, 5, 5};
         MetricsTracker tracker = new MetricsTracker();
-        new QuickSort().sort(arr, tracker); // ✅
+        new QuickSort().sort(arr, tracker);
         assertTrue(ArrayUtils.isSorted(arr));
     }
 

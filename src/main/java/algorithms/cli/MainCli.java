@@ -35,7 +35,7 @@ public class MainCli {
                 int[] arr = random.ints(n, 0, 1_000_000).toArray();
                 tracker.reset();
                 long start = System.nanoTime();
-                new MergeSort().sort(arr, tracker);   // ✅ через объект
+                new MergeSort().sort(arr, tracker);
                 long elapsed = (System.nanoTime() - start) / 1_000_000;
                 Metrics m = tracker.snapshot();
                 results.add(new String[]{"mergesort", String.valueOf(n), String.valueOf(elapsed),
@@ -45,7 +45,7 @@ public class MainCli {
                 int[] arr = random.ints(n, 0, 1_000_000).toArray();
                 tracker.reset();
                 long start = System.nanoTime();
-                new QuickSort().sort(arr, tracker);   // ✅ через объект
+                new QuickSort().sort(arr, tracker);
                 long elapsed = (System.nanoTime() - start) / 1_000_000;
                 Metrics m = tracker.snapshot();
                 results.add(new String[]{"quicksort", String.valueOf(n), String.valueOf(elapsed),

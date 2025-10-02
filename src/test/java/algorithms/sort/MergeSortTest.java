@@ -12,7 +12,7 @@ class MergeSortTest {
     void testSortedArray() {
         int[] arr = {1,2,3,4,5};
         MetricsTracker tracker = new MetricsTracker();
-        new MergeSort().sort(arr, tracker); // ✅ через объект
+        new MergeSort().sort(arr, tracker);
         assertTrue(ArrayUtils.isSorted(arr));
     }
 
@@ -20,7 +20,7 @@ class MergeSortTest {
     void testRandomArray() {
         int[] arr = new Random().ints(100, 0, 1000).toArray();
         MetricsTracker tracker = new MetricsTracker();
-        new MergeSort().sort(arr, tracker); // ✅
+        new MergeSort().sort(arr, tracker);
         assertTrue(ArrayUtils.isSorted(arr));
     }
 
@@ -28,7 +28,7 @@ class MergeSortTest {
     void testCutoffInsertionSort() {
         int[] arr = {5, 4, 3, 2, 1};
         MetricsTracker tracker = new MetricsTracker();
-        new MergeSort().sort(arr, tracker); // ✅
+        new MergeSort().sort(arr, tracker);
         assertTrue(ArrayUtils.isSorted(arr));
     }
 

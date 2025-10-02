@@ -19,10 +19,10 @@ public class SortSelector {
 
         for (SortAlgorithm algo : algorithms) {
             int[] copy = array.clone();
-            MetricsTracker tracker = new MetricsTracker(); // 👈 добавляем
+            MetricsTracker tracker = new MetricsTracker();
 
             long start = System.nanoTime();
-            algo.sort(copy, tracker); // 👈 передаем tracker
+            algo.sort(copy, tracker);
             long end = System.nanoTime();
 
             SortMetrics metrics = new SortMetrics(end - start, algo.name());
